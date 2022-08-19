@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul 28 09:42:56 2022
+# Process ID: 9776
+# Current directory: C:/Users/zy/Desktop/Complex_Division_Pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4080 C:\Users\zy\Desktop\Complex_Division_Pipeline\Complex_Division_Pipeline.xpr
+# Log file: C:/Users/zy/Desktop/Complex_Division_Pipeline/vivado.log
+# Journal file: C:/Users/zy/Desktop/Complex_Division_Pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.xprSScanning sources...FFinished scanning sourcesIINFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2019/Vivado/2019.1/data/ip'.
+oopen_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:38 . Memory (MB): peak = 719.727 ; gain = 127.285update_compile_order -fileset sources_1
+set_property top Cordic_Divide_Top [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Thu Jul 28 09:47:02 2022] Launched synth_1...
+Run output will be captured here: C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 28 10:53:21 2022...

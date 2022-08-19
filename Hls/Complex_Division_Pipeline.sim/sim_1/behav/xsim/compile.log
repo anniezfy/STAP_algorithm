@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/CR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cordic_Sin_Cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/new/Complex_Divide_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_Divide_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Cordic_Divide_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cordic_Divide_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Cordic_divide_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/DFFY.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFFY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Delay_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Delay_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Shift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/abc/abc.srcs/sources_1/imports/Desktop/cordic_arctan.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic_arctan
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sim_1/new/Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cordic_sim
