@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/Square_Root/Square_Root.srcs/sources_1/new/Real.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Real
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zy/Desktop/Square_Root/Square_Root.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim

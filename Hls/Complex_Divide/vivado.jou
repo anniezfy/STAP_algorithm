@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul 20 14:19:34 2022
+# Process ID: 10260
+# Current directory: C:/Users/zy/Desktop/Comple_Divide
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12624 C:\Users\zy\Desktop\Comple_Divide\Comple_Divide.xpr
+# Log file: C:/Users/zy/Desktop/Comple_Divide/vivado.log
+# Journal file: C:/Users/zy/Desktop/Comple_Divide\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/zy/Desktop/Comple_Divide/Cordic_sim_behav.wcfg
+source Cordic_sim.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Cordic_sim_behav.wcfg}
+add_wave {{/Cordic_sim/inst1/LV2/tan}} 
+current_wave_config {Cordic_sim_behav.wcfg}
+add_wave {{/Cordic_sim/inst1/LV2/x}} 
+current_wave_config {Cordic_sim_behav.wcfg}
+add_wave {{/Cordic_sim/inst1/LV2/x0}} {{/Cordic_sim/inst1/LV2/y0}} 
+update_compile_order -fileset sources_1
+current_wave_config {Cordic_sim_behav.wcfg}
+add_wave {{/Cordic_sim/inst1/LV2/shift_x}} {{/Cordic_sim/inst1/LV2/shift_y}} 
+relaunch_sim
+update_compile_order -fileset sources_1
+current_wave_config {Cordic_sim_behav.wcfg}
+add_wave {{/Cordic_sim/inst1/LV2/x_1}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Cordic_sim_behav.wcfg}
+add_wave {{/Cordic_sim/Imaginary}} {{/Cordic_sim/PERIOD}} 
+current_wave_config {Cordic_sim_behav.wcfg}
+add_wave {{/Cordic_sim/Real}} 
+relaunch_sim
+save_wave_config {C:/Users/zy/Desktop/Comple_Divide/Cordic_sim_behav.wcfg}
+close_sim

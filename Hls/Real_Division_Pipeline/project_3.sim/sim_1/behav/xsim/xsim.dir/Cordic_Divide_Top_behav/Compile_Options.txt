@@ -1,0 +1,1 @@
+-wto "8abcbc7222e24ac0869cfe8335d6a742" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Cordic_Divide_Top_behav" "xil_defaultlib.Cordic_Divide_Top" "xil_defaultlib.glbl" -log "elaborate.log" 

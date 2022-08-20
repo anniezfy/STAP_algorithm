@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v,1658303252,verilog,,C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v,,Cordic_Sin_Cos,,,,,,,,
+C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v,1658303399,verilog,,C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v,,Cordic_Top,,,,,,,,
+C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_sim.v,1658302767,verilog,,,,Cordic_sim,,,,,,,,
+C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v,1657852822,verilog,,C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v,,cordic_arctan,,,,,,,,
+C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v,1658303092,verilog,,C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_sim.v,,cordic_div,,,,,,,,

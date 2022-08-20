@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/imports/sources_1/new/Cordic_Divide_Top.v,1659001514,verilog,,C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/imports/sources_1/new/Cordic_divide_test.v,,Cordic_Divide_Top,,,,,,,,
+C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/imports/sources_1/new/Cordic_divide_test.v,1658887601,verilog,,C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/imports/sources_1/new/Shift.v,,cordic_div,,,,,,,,
+C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/imports/sources_1/new/Shift.v,1658736253,verilog,,C:/Users/zy/Desktop/chisel_test - v2/project_3/project_3.srcs/sim_1/new/sim.v,,Shift,,,,,,,,
+C:/Users/zy/Desktop/chisel_test - v2/project_3/project_3.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/zy/Desktop/chisel_test - v2/project_3/project_3.srcs/sim_1/new/sim.v,1659003064,verilog,,,,test_cordic_div_2,,,,,,,,

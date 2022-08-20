@@ -1,0 +1,16 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sim_1/new/Sim.v,1660118696,verilog,,,,Cordic_sim,,,,,,,,
+C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sim_1/new/cv.sim,1659944450,verilog,,,,sim,,,,,,,,
+C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/new/Complex_Divide_Top.v,1658900359,verilog,,C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Cordic_Divide_Top.v,,Complex_Divide_Top,,,,,,,,
+C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/new/Flag_Pipeline.v,1660110865,verilog,,C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Shift.v,,Flag_Pipeline,,,,,,,,
+C:/Users/zy/Desktop/abc/abc.srcs/sources_1/imports/Desktop/cordic_arctan.v,1658895667,verilog,,C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sim_1/new/Sim.v,,cordic_arctan,,,,,,,,
+C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/CR.v,1658900729,verilog,,C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/new/Complex_Divide_Top.v,,Cordic_Sin_Cos,,,,,,,,
+C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Cordic_Divide_Top.v,1660110902,verilog,,C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Cordic_divide_test.v,,Cordic_Divide_Top,,,,,,,,
+C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Cordic_divide_test.v,1660112961,verilog,,C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/DFFY.v,,cordic_div,,,,,,,,
+C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/DFFY.v,1658889645,verilog,,C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Delay_FF.v,,DFFY,,,,,,,,
+C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Delay_FF.v,1658886284,verilog,,C:/Users/zy/Desktop/Complex_Division_Pipeline/Complex_Division_Pipeline.srcs/sources_1/new/Flag_Pipeline.v,,Delay_FF,,,,,,,,
+C:/Users/zy/Desktop/abc/abc.srcs/sources_1/new/Shift.v,1660106316,verilog,,C:/Users/zy/Desktop/abc/abc.srcs/sources_1/imports/Desktop/cordic_arctan.v,,Shift,,,,,,,,

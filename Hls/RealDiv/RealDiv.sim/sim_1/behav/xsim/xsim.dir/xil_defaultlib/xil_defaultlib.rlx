@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/zy/Desktop/RealDiv/RealDiv.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/zy/Desktop/RealDiv/RealDiv.srcs/sim_1/imports/new/sim.v,1658739914,verilog,,,,sim,,,,,,,,
+C:/Users/zy/Desktop/RealDiv/RealDiv.srcs/sources_1/new/LV.v,1658741251,verilog,,C:/Users/zy/Desktop/RealDiv/RealDiv.srcs/sources_1/new/LV_Top.v,,cordic_div,,,,,,,,
+C:/Users/zy/Desktop/RealDiv/RealDiv.srcs/sources_1/new/LV_Top.v,1658740790,verilog,,C:/Users/zy/Desktop/RealDiv/RealDiv.srcs/sources_1/new/Shift.v,,Cordic_Divide_Top,,,,,,,,
+C:/Users/zy/Desktop/RealDiv/RealDiv.srcs/sources_1/new/Shift.v,1658740737,verilog,,C:/Users/zy/Desktop/RealDiv/RealDiv.srcs/sim_1/imports/new/sim.v,,Shift,,,,,,,,

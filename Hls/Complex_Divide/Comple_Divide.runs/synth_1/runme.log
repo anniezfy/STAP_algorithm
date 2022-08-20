@@ -1,0 +1,1240 @@
+
+*** Running vivado
+    with args -log Cordic_Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cordic_Top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Cordic_Top.tcl -notrace
+Command: synth_design -top Cordic_Top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 396 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 563.586 ; gain = 185.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Cordic_Top' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cordic_arctan' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:23]
+	Parameter angle_0 bound to: 2949120 - type: integer 
+	Parameter angle_1 bound to: 1740992 - type: integer 
+	Parameter angle_2 bound to: 919872 - type: integer 
+	Parameter angle_3 bound to: 466944 - type: integer 
+	Parameter angle_4 bound to: 234368 - type: integer 
+	Parameter angle_5 bound to: 117312 - type: integer 
+	Parameter angle_6 bound to: 58688 - type: integer 
+	Parameter angle_7 bound to: 29312 - type: integer 
+	Parameter angle_8 bound to: 14656 - type: integer 
+	Parameter angle_9 bound to: 7360 - type: integer 
+	Parameter angle_10 bound to: 3648 - type: integer 
+	Parameter angle_11 bound to: 1856 - type: integer 
+	Parameter angle_12 bound to: 896 - type: integer 
+	Parameter angle_13 bound to: 448 - type: integer 
+	Parameter angle_14 bound to: 256 - type: integer 
+	Parameter angle_15 bound to: 128 - type: integer 
+	Parameter pipeline bound to: 16 - type: integer 
+	Parameter K bound to: 39796 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element y16_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:400]
+WARNING: [Synth 8-6014] Unused sequential element mozhi_tmp_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:434]
+WARNING: [Synth 8-6014] Unused sequential element mozhi_tmp1_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:435]
+WARNING: [Synth 8-6014] Unused sequential element mozhi_tmp2_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:436]
+WARNING: [Synth 8-6014] Unused sequential element mozhi_tmp3_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:437]
+WARNING: [Synth 8-6014] Unused sequential element angle1_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:448]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_arctan' (1#1) [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cordic_div' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:23]
+	Parameter pipeline bound to: 16 - type: integer 
+	Parameter K bound to: 39796 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'start' should be on the sensitivity list [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:69]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:95]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:121]
+WARNING: [Synth 8-6014] Unused sequential element x15_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:432]
+WARNING: [Synth 8-6014] Unused sequential element x16_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:450]
+WARNING: [Synth 8-6014] Unused sequential element y16_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:451]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_div' (2#1) [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Cordic_Sin_Cos' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:23]
+	Parameter angle_0 bound to: 2949120 - type: integer 
+	Parameter angle_1 bound to: 1740992 - type: integer 
+	Parameter angle_2 bound to: 919872 - type: integer 
+	Parameter angle_3 bound to: 466944 - type: integer 
+	Parameter angle_4 bound to: 234368 - type: integer 
+	Parameter angle_5 bound to: 117312 - type: integer 
+	Parameter angle_6 bound to: 58688 - type: integer 
+	Parameter angle_7 bound to: 29312 - type: integer 
+	Parameter angle_8 bound to: 14656 - type: integer 
+	Parameter angle_9 bound to: 7360 - type: integer 
+	Parameter angle_10 bound to: 3648 - type: integer 
+	Parameter angle_11 bound to: 1856 - type: integer 
+	Parameter angle_12 bound to: 896 - type: integer 
+	Parameter angle_13 bound to: 448 - type: integer 
+	Parameter angle_14 bound to: 256 - type: integer 
+	Parameter angle_15 bound to: 128 - type: integer 
+	Parameter pipeline bound to: 16 - type: integer 
+	Parameter K bound to: 39796 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element z16_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'Cordic_Sin_Cos' (3#1) [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:23]
+WARNING: [Synth 8-689] width (64) of port connection 'angle' does not match port width (32) of module 'Cordic_Sin_Cos' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:75]
+WARNING: [Synth 8-6014] Unused sequential element tmp_real_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:92]
+WARNING: [Synth 8-6014] Unused sequential element tmp_imag_reg was removed.  [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'Cordic_Top' (4#1) [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 628.914 ; gain = 250.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 628.914 ; gain = 250.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 628.914 ; gain = 250.402
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:133]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:151]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:151]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:169]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:151]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:169]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:187]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:169]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:187]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:205]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:187]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:205]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:223]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:205]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:223]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:223]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:241]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:241]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:259]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:259]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:277]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:277]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:295]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:295]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:313]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:313]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:331]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:331]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:349]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:349]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:367]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:367]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:385]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:431]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:385]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_arctan.v:403]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:98]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:124]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:183]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:183]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:201]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:201]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:219]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:219]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:237]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:237]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:255]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:255]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:273]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:273]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:291]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:291]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:309]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:309]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:327]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:327]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:345]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:345]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:363]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:363]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:381]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:381]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:400]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:400]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:418]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:418]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:436]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:436]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:454]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:113]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:131]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:131]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:131]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:149]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:149]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:149]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:185]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:185]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:185]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:203]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:203]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:203]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:221]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:221]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:239]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:239]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:257]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:257]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:275]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:275]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:293]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:293]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:311]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:311]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:329]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:329]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:347]
+INFO: [Common 17-14] Message 'Synth 8-5818' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:92]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:92]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:94]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Top.v:94]
+DSP Debug: swapped A/B pins for adder 000001F0EF914FA0
+DSP Debug: swapped A/B pins for adder 000001F0EF913020
+DSP Debug: swapped A/B pins for adder 000001F0EF914FA0
+WARNING: [Synth 8-327] inferring latch for variable 'x_1_reg' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:74]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 737.359 ; gain = 358.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |cordic_div       |           2|     17568|
+|2     |Cordic_Top__GCB0 |           1|     19372|
+|3     |Cordic_Top__GCB1 |           1|      5910|
+|4     |Cordic_Top__GCB2 |           1|     22552|
++------+-----------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     96 Bit       Adders := 4     
+	   2 Input     96 Bit       Adders := 4     
+	   3 Input     96 Bit       Adders := 4     
+	   2 Input     64 Bit       Adders := 68    
+	   3 Input     64 Bit       Adders := 93    
+	   4 Input     64 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 204   
+	                5 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	                 1x96  Multipliers := 4     
+	                 1x64  Multipliers := 8     
+	                32x64  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 114   
+	   4 Input     64 Bit        Muxes := 4     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 43    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Cordic_Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     96 Bit       Adders := 4     
+	   2 Input     96 Bit       Adders := 4     
+	   3 Input     96 Bit       Adders := 4     
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
++---Multipliers : 
+	                 1x96  Multipliers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 7     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module cordic_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 16    
+	   3 Input     64 Bit       Adders := 15    
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 49    
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                 1x64  Multipliers := 3     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 20    
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+Module Cordic_Sin_Cos 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 16    
+	   3 Input     64 Bit       Adders := 32    
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 52    
+	                5 Bit    Registers := 1     
++---Multipliers : 
+	                32x64  Multipliers := 1     
+	                 1x64  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 34    
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module cordic_arctan 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 19    
+	   3 Input     64 Bit       Adders := 31    
+	   4 Input     64 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 52    
+	                5 Bit    Registers := 1     
++---Multipliers : 
+	                 1x64  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 33    
+	   4 Input     64 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 6 [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:103]
+DSP Report: Generating DSP CR/z02, operation Mode is: A*B.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: Generating DSP CR/z02, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: Generating DSP CR/z02, operation Mode is: (A:0x1ffff)*B.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: Generating DSP CR/z02, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: Generating DSP CR/z02, operation Mode is: A*(B:0x1ffff).
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: Generating DSP CR/z02, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: operator CR/z02 is absorbed into DSP CR/z02.
+DSP Report: Generating DSP Imaginary1, operation Mode is: A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Imaginary1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: operator Imaginary1 is absorbed into DSP Imaginary1.
+DSP Report: Generating DSP Real1, operation Mode is: A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: PCIN+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: PCIN+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: PCIN+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: PCIN+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: PCIN+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: PCIN+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: Generating DSP Real1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Report: operator Real1 is absorbed into DSP Real1.
+DSP Debug: swapped A/B pins for adder 000001F0FBDC6CD0
+DSP Debug: swapped A/B pins for adder 000001F0FBDC6CD0
+DSP Report: Generating DSP Real2, operation Mode is: A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: PCIN+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: PCIN+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: PCIN+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: PCIN+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: PCIN+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: PCIN+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Real2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: operator Real2 is absorbed into DSP Real2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: PCIN+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: Generating DSP Imaginary2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+DSP Report: operator Imaginary2 is absorbed into DSP Imaginary2.
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[16]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[17]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[18]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[19]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[20]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[21]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[22]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[23]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[24]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[25]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[26]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[27]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[28]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[29]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[30]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[31]' (FDCE) to 'cordic_div:/z0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[0]' (FDCE) to 'cordic_div:/z0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[8]' (FDCE) to 'cordic_div:/z0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[4]' (FDCE) to 'cordic_div:/z0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[12]' (FDCE) to 'cordic_div:/z0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[2]' (FDCE) to 'cordic_div:/z0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[10]' (FDCE) to 'cordic_div:/z0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[6]' (FDCE) to 'cordic_div:/z0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[14]' (FDCE) to 'cordic_div:/z0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[1]' (FDCE) to 'cordic_div:/z0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[9]' (FDCE) to 'cordic_div:/z0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[5]' (FDCE) to 'cordic_div:/z0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[13]' (FDCE) to 'cordic_div:/z0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[3]' (FDCE) to 'cordic_div:/z0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[11]' (FDCE) to 'cordic_div:/z0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[7]' (FDCE) to 'cordic_div:/z0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[15]' (FDCE) to 'cordic_div:/z0_reg[32]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[16]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[17]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[18]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[19]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[20]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[21]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[22]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[23]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[24]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[25]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[26]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[27]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[28]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[29]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z1_reg[30]' (FDC) to 'cordic_div:/z1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[32]' (FDCE) to 'cordic_div:/z0_reg[33]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[33]' (FDCE) to 'cordic_div:/z0_reg[34]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[34]' (FDCE) to 'cordic_div:/z0_reg[35]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[35]' (FDCE) to 'cordic_div:/z0_reg[36]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[36]' (FDCE) to 'cordic_div:/z0_reg[37]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[37]' (FDCE) to 'cordic_div:/z0_reg[38]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[38]' (FDCE) to 'cordic_div:/z0_reg[39]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[39]' (FDCE) to 'cordic_div:/z0_reg[40]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[40]' (FDCE) to 'cordic_div:/z0_reg[41]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[41]' (FDCE) to 'cordic_div:/z0_reg[42]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[42]' (FDCE) to 'cordic_div:/z0_reg[43]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[43]' (FDCE) to 'cordic_div:/z0_reg[44]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[44]' (FDCE) to 'cordic_div:/z0_reg[45]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[45]' (FDCE) to 'cordic_div:/z0_reg[46]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[46]' (FDCE) to 'cordic_div:/z0_reg[47]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[47]' (FDCE) to 'cordic_div:/z0_reg[48]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[48]' (FDCE) to 'cordic_div:/z0_reg[49]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[49]' (FDCE) to 'cordic_div:/z0_reg[50]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[50]' (FDCE) to 'cordic_div:/z0_reg[51]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[51]' (FDCE) to 'cordic_div:/z0_reg[52]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[52]' (FDCE) to 'cordic_div:/z0_reg[53]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[53]' (FDCE) to 'cordic_div:/z0_reg[54]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[54]' (FDCE) to 'cordic_div:/z0_reg[55]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[55]' (FDCE) to 'cordic_div:/z0_reg[56]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[56]' (FDCE) to 'cordic_div:/z0_reg[57]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[57]' (FDCE) to 'cordic_div:/z0_reg[58]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[58]' (FDCE) to 'cordic_div:/z0_reg[59]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[59]' (FDCE) to 'cordic_div:/z0_reg[60]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[60]' (FDCE) to 'cordic_div:/z0_reg[61]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[61]' (FDCE) to 'cordic_div:/z0_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z0_reg[62]' (FDCE) to 'cordic_div:/z0_reg[63]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cordic_div:/\z0_reg[63] )
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[16]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[17]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[18]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[19]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[20]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[21]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[22]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[23]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[24]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[25]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[26]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[27]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[28]' (FDC) to 'cordic_div:/z2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z2_reg[29]' (FDC) to 'cordic_div:/z2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z3_reg[16]' (FDC) to 'cordic_div:/z3_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z3_reg[17]' (FDC) to 'cordic_div:/z3_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z3_reg[18]' (FDC) to 'cordic_div:/z3_reg[19]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z3_reg[19]' (FDC) to 'cordic_div:/z3_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z3_reg[20]' (FDC) to 'cordic_div:/z3_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z3_reg[21]' (FDC) to 'cordic_div:/z3_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z3_reg[22]' (FDC) to 'cordic_div:/z3_reg[23]'
+INFO: [Synth 8-3886] merging instance 'cordic_div:/z3_reg[23]' (FDC) to 'cordic_div:/z3_reg[24]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cordic_div:/\state_y_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cordic_div:/\state_reg[1] )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[15]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[14]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[13]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[12]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[11]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[10]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[9]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[8]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[7]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[6]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[5]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[4]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[3]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[2]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[1]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[0]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/z0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/y0_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CR/x0_reg[31] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cordic_div:/z16_reg[16]__0/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:452]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:12 . Memory (MB): peak = 916.383 ; gain = 537.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Cordic_Top  | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (A:0x1ffff)*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*(B:0x1ffff)  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 45     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Cordic_Top  | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |cordic_div       |           2|      9040|
+|2     |Cordic_Top__GCB0 |           1|     10221|
+|3     |Cordic_Top__GCB1 |           1|      3014|
+|4     |Cordic_Top__GCB2 |           1|     11391|
++------+-----------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:12 . Memory (MB): peak = 916.383 ; gain = 537.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |cordic_div       |           2|      9040|
+|2     |Cordic_Top__GCB0 |           1|     10221|
+|3     |Cordic_Top__GCB1 |           1|      3014|
+|4     |Cordic_Top__GCB2 |           1|     11391|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:397]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/Cordic_Sin_Cos.v:398]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:16 . Memory (MB): peak = 922.711 ; gain = 544.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:20 . Memory (MB): peak = 922.711 ; gain = 544.199
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[63] with 1st driver pin 'i_932/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[63] with 2nd driver pin 'LV_1/y_1_reg[63]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[62] with 1st driver pin 'i_931/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[62] with 2nd driver pin 'LV_1/y_1_reg[62]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[61] with 1st driver pin 'i_930/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[61] with 2nd driver pin 'LV_1/y_1_reg[61]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[60] with 1st driver pin 'i_929/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[60] with 2nd driver pin 'LV_1/y_1_reg[60]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[59] with 1st driver pin 'i_928/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[59] with 2nd driver pin 'LV_1/y_1_reg[59]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[58] with 1st driver pin 'i_927/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[58] with 2nd driver pin 'LV_1/y_1_reg[58]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[57] with 1st driver pin 'i_926/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[57] with 2nd driver pin 'LV_1/y_1_reg[57]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[56] with 1st driver pin 'i_925/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[56] with 2nd driver pin 'LV_1/y_1_reg[56]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[55] with 1st driver pin 'i_924/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[55] with 2nd driver pin 'LV_1/y_1_reg[55]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[54] with 1st driver pin 'i_923/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[54] with 2nd driver pin 'LV_1/y_1_reg[54]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[53] with 1st driver pin 'i_922/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[53] with 2nd driver pin 'LV_1/y_1_reg[53]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[52] with 1st driver pin 'i_921/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[52] with 2nd driver pin 'LV_1/y_1_reg[52]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[51] with 1st driver pin 'i_920/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[51] with 2nd driver pin 'LV_1/y_1_reg[51]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[50] with 1st driver pin 'i_919/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[50] with 2nd driver pin 'LV_1/y_1_reg[50]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[49] with 1st driver pin 'i_918/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[49] with 2nd driver pin 'LV_1/y_1_reg[49]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[48] with 1st driver pin 'i_917/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[48] with 2nd driver pin 'LV_1/y_1_reg[48]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[47] with 1st driver pin 'i_916/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[47] with 2nd driver pin 'LV_1/y_1_reg[47]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[46] with 1st driver pin 'i_915/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[46] with 2nd driver pin 'LV_1/y_1_reg[46]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[45] with 1st driver pin 'i_914/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[45] with 2nd driver pin 'LV_1/y_1_reg[45]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[44] with 1st driver pin 'i_913/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[44] with 2nd driver pin 'LV_1/y_1_reg[44]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[43] with 1st driver pin 'i_912/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[43] with 2nd driver pin 'LV_1/y_1_reg[43]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[42] with 1st driver pin 'i_911/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[42] with 2nd driver pin 'LV_1/y_1_reg[42]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[41] with 1st driver pin 'i_910/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[41] with 2nd driver pin 'LV_1/y_1_reg[41]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[40] with 1st driver pin 'i_909/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[40] with 2nd driver pin 'LV_1/y_1_reg[40]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[39] with 1st driver pin 'i_908/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[39] with 2nd driver pin 'LV_1/y_1_reg[39]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[38] with 1st driver pin 'i_907/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[38] with 2nd driver pin 'LV_1/y_1_reg[38]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[37] with 1st driver pin 'i_906/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[37] with 2nd driver pin 'LV_1/y_1_reg[37]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[36] with 1st driver pin 'i_905/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[36] with 2nd driver pin 'LV_1/y_1_reg[36]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[35] with 1st driver pin 'i_904/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[35] with 2nd driver pin 'LV_1/y_1_reg[35]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[34] with 1st driver pin 'i_903/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[34] with 2nd driver pin 'LV_1/y_1_reg[34]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[33] with 1st driver pin 'i_902/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[33] with 2nd driver pin 'LV_1/y_1_reg[33]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[32] with 1st driver pin 'i_901/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[32] with 2nd driver pin 'LV_1/y_1_reg[32]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[31] with 1st driver pin 'i_900/O' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:82]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin LV_1/y_1_reg[31] with 2nd driver pin 'LV_1/y_1_reg[31]/Q' [C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.srcs/sources_1/imports/Desktop/cordic_div.v:119]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|      350|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:20 . Memory (MB): peak = 922.711 ; gain = 544.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:21 . Memory (MB): peak = 922.711 ; gain = 544.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:21 . Memory (MB): peak = 922.711 ; gain = 544.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:21 . Memory (MB): peak = 922.711 ; gain = 544.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:21 . Memory (MB): peak = 922.711 ; gain = 544.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |  2592|
+|3     |DSP48E1 |    61|
+|4     |LUT1    |  1272|
+|5     |LUT2    |  3577|
+|6     |LUT3    |  6302|
+|7     |LUT4    |   672|
+|8     |LUT5    |   443|
+|9     |LUT6    |   875|
+|10    |FDCE    |  9235|
+|11    |FDRE    |   614|
+|12    |LD      |   128|
+|13    |IBUF    |   258|
+|14    |OBUF    |   128|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               | 26159|
+|2     |  CR     |Cordic_Sin_Cos |  5379|
+|3     |  CV     |cordic_arctan  |  6839|
+|4     |  LV2    |cordic_div     |  5360|
+|5     |  LV_1   |cordic_div_0   |  5360|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:21 . Memory (MB): peak = 922.711 ; gain = 544.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 751 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:01:21 . Memory (MB): peak = 922.711 ; gain = 544.199
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:21 . Memory (MB): peak = 922.711 ; gain = 544.199
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2781 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 998.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LD => LDCE: 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+418 Infos, 15 Warnings, 117 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:31 . Memory (MB): peak = 998.559 ; gain = 644.895
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 998.559 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/zy/Desktop/Comple_Divide/Comple_Divide.runs/synth_1/Cordic_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Cordic_Top_utilization_synth.rpt -pb Cordic_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 19 14:56:52 2022...
